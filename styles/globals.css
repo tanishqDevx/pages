@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layout reset */
+html, body, #__next {
+  height: 100%;
+}
+
+/* Default body styles */
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background-color: #000;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use Orbitron for a spacey feel */
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color .15s ease, color .15s ease;
+}
+
+/* Accessibility focus */
+:focus {
+  outline: 2px solid rgba(59,130,246,0.5);
+  outline-offset: 2px;
+}
